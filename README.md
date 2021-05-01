@@ -27,9 +27,9 @@ Designed a YelpCamp website with full CRUD function where users can register, lo
 - Used *mapbox API* to render the interactive map showing the campgrounds locations 
 
 **Back end**
-- **Routes:** Applied *node.js and express *to build campgrounds, reviews and users routes and render them using *ejs*
-- **Database Management: **Built campground, review and user models using mongoose linked with *Mongo Atlas* and with validation schemas using *Joi* and self-coded middlewares
-- **Images Upload and Storage: **Applied *Multer-Cloudinary package* and *Cloudinary* to allow users to upload multiple images and render those pictures in show page by getting image URL from Cloudinary
-- **User Authentication and Authorization: **Applied *passport package and session* to hash password with salts and store it in *Mongo Atlas* and authenticate users. Authorize users by comparing the author information stored in MongoDB and current user information stored in session
+- **Routes:** Applied *node.js and express* to build campgrounds, reviews and users routes and render them using *ejs*
+- **Database Management:** Built campground, review and user models using mongoose linked with *Mongo Atlas* and with validation schemas using *Joi* and self-coded middlewares
+- **Images Upload and Storage:** Applied *Multer-Cloudinary package* and *Cloudinary* to allow users to upload multiple images and render those pictures in show page by getting image URL from Cloudinary
+- **User Authentication and Authorization:** Applied *passport package and session* to hash password with salts and store it in *Mongo Atlas* and authenticate users. Authorize users by comparing the author information stored in MongoDB and current user information stored in session
 - **Error Handling:** Handled Error by using *middlewares and ExpressErrors package*
 - **Security:** Used helmet, mongo-sanitize and sanitize-html to prevent potential Mongo injection and cross site scripting
