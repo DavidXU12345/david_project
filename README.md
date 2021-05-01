@@ -1,6 +1,6 @@
 # david_project
 
-All of my personal projects in Python and C++ are saved here for your reference.
+All of my personal projects are saved here for your reference.
 
 ## 1. HSI Prediction
 I applied KNN algorithm to predict Hang Seng Index trend by using features "Open-Close" and "High-Low" and picked up k=15 which is the optimal parameter. By using back test, this simple "buy low, sell high" trading strategy can give me over 30% extra return compared to Hang Seng Index itself for past three years.
