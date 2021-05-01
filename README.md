@@ -11,13 +11,7 @@ It is a school project (MSc Data Science at University of London). I wrote KNN a
 ## 3. Yahoo News Web Scrapping and Data Analysis
 It is a school project (MSc Data Science at University of London). I used beautiful soup to get information from Yahoo news including news title, descriptions, source, time, links. I also applied sentiment analysis to give sentiment scores for each searching results and present them in a visualized way.
 
-## 4. Sudoku Solver
-I built a sudoku solver using backtracking algorithm.
-
-## 5. Tic Tac Toe Game
-I built an undefeatable AI to play Tic Tac Toe game using minimax algorithm.
-
-## 6. YelpCamp Web Development (Deployed using Heroku)
+## 4. YelpCamp Web Development (Deployed using Heroku)
 Website: https://yelpcampdavidxu.herokuapp.com/
 
 Designed a YelpCamp website with full CRUD function where users can register, login and give scores and reviews to a specific campground 
