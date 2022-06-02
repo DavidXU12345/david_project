@@ -1,0 +1,54 @@
+<% layout('layouts/boilerplate') %>
+<link rel="stylesheet" href="/stylesheets/starability-growRotate.css">
+
+
+    <h1>All Courses</h1>
+    <div class="mb-3">
+        <a class="btn btn-info" href="courses/new">Add Course </a>
+    </div>
+
+    <ul>
+        <% for (let course of courses) {%>
+
+
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <% if(course.images.length) { %>
+                            <img class="img-fluid" alt="" src="<%=course.images[0].url%>">
+                            <% } else { %>
+                                <img class="img-fluid" alt=""
+                                    src="https://res.cloudinary.com/dzudoox2j/image/upload/v1619848667/YelpCamp/29592647-40da86ca-875a-11e7-8bc3-941700b0a323_krknr9.png">
+                                <% } %>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <%= course.title %>
+                            </h4>
+                            </p>
+                            <p class="card-text">
+                                <medium>
+                                    Teacher: <mark><%= course.teacher %></mark>
+                                </medium>
+                            </p>
+                            <p class="starability-result" data-rating="<%=Math.round(course.avgRating)%>">
+                                Rated: <%= Math.round(course.avgRating) %> stars
+                              </p>
+                            <p class="card-text">
+                                <medium>
+                                    Average Rating: <%= course.avgRating %> <br>
+                                </medium>
+                                <medium>
+                                    Number of Reviews: <%= course.numOfReviews %> 
+                                </medium>
+                            </p>
+                            
+                            <a class="btn btn-primary" href="courses/<%=course._id%>">View <%= course.title
+                                    %> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+    </ul>
